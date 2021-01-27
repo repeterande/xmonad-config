@@ -1,7 +1,45 @@
 
-xmonad.hs:22:40: warning: [-Wdeprecations]
+xmonad.hs:34:44: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+34 |       xmonad $ docks $ fullscreenSupport $ defaultConfig
+   |                                            ^^^^^^^^^^^^^
+
+xmonad.hs:37:40: warning: [-Wdeprecations]
     In the use of ‘defaultPP’ (imported from XMonad.Hooks.DynamicLog):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad.Hooks.DynamicLog) instead."
    |
-22 |         , logHook = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn h }
+37 |         , logHook = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn h }
    |                                        ^^^^^^^^^
+
+xmonad.hs:41:52: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+41 |         , manageHook = myManageHook <+> manageHook defaultConfig
+   |                                                    ^^^^^^^^^^^^^
+
+xmonad.hs:60:5: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+60 |     spacing 2 $
+   |     ^^^^^^^
+
+xmonad.hs:62:70: warning: [-Wdeprecations]
+    In the use of ‘defaultTheme’
+    (imported from XMonad.Layout.Tabbed, but defined in XMonad.Layout.Decoration):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad.Layout.Decoration) instead."
+   |
+62 |     smartBorders $ Grid ||| spiral (6/7) ||| tabbedAlways shrinkText defaultTheme 
+   |                                                                      ^^^^^^^^^^^^
+
+xmonad.hs:73:32: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+   |
+73 |    , title   =? "Add New Items" --> doFloat --- Xfce4-panel add new items
+   |                                ^
